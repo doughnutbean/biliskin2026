@@ -6,7 +6,7 @@
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/your/biliskin.git
+git clone https://github.com/doughnutbean/biliskin2026.git
 cd biliskin
 
 # 2. 安装依赖
