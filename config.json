@@ -1,0 +1,27 @@
+{
+  "_comment": "B站装扮抢购工具配置文件",
+  "bilibili": {
+    "base_url": "https://api.bilibili.com",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  },
+  "grab": {
+    "item_id": "113353",
+    "num": 1,
+    "mode": "once",
+    "retry_interval": 0.5,
+    "max_retries": 30,
+    "sale_time": "2026-06-28 17:00:00",
+    "advance_seconds": 0.5,
+    "concurrent_workers": 8
+  },
+  "notify": {
+    "enabled": false,
+    "type": "desktop",
+    "pushplus_token": ""
+  },
+  "proxy": {
+    "enabled": false,
+    "http": "",
+    "https": ""
+  }
+}

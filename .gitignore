@@ -1,0 +1,29 @@
+# Cookie & 用户数据 —— 绝对不能提交
+cookies.json
+resp.json
+r.json
+
+# PyInstaller 打包产物
+build/
+dist/
+*.spec.bak
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+desktop.ini
+Thumbs.db
