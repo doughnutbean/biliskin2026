@@ -16,6 +16,23 @@ pip install -r requirements.txt
 pip install qrcode[pillow]
 ```
 
+## 📦 打包为 EXE
+
+项目自带 `biliskin.spec`，使用 PyInstaller 一键打包：
+
+```bash
+pip install pyinstaller
+python -m PyInstaller biliskin.spec --clean --noconfirm
+```
+
+产物在 `dist/biliskin-gui/` 目录，双击 `biliskin-gui.exe` 启动。
+
+**打包特性：** 无命令行窗口 · 启动 < 1 秒（onedir 免解压）· 排除了 GUI 不用的模块减小体积
+
+如需自定义图标，修改 `biliskin.spec` 中 `EXE(...)` 的 `icon="icon.ico"` 即可。
+
+---
+
 ## 🚀 快速开始
 
 ### 1️⃣ 登录
@@ -200,27 +217,6 @@ biliskin/
 - **链接导入**：粘贴活动 URL 自动填充商品ID和参数
 - **监控模式**：持续检测库存，有货立即抢购
 - **图形界面**：基于 tkinter 的可视化操作
-
-## 📦 打包为 EXE
-
-项目自带 `biliskin.spec`，使用 PyInstaller 一键打包：
-
-```bash
-pip install pyinstaller
-python -m PyInstaller biliskin.spec --clean --noconfirm
-```
-
-产物在 `dist/biliskin-gui/` 目录，双击 `biliskin-gui.exe` 启动。
-
-**打包特性：**
-
-- **无命令行窗口**：使用 Windows GUI 子系统（`console=False`），不会弹出黑窗
-- **启动快**：`onedir` 模式免解压，搭配延迟导入优化，启动 < 1 秒
-- **体积优化**：排除了 `rich`/`matplotlib` 等 GUI 不用的模块
-
-如需自定义图标，修改 `biliskin.spec` 中 `EXE(...)` 的 `icon="icon.ico"` 即可。
-
----
 
 ## ⚠️ 注意事项
 
